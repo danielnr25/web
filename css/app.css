@@ -107,40 +107,142 @@ h1 {
     margin-inline-end: 0px;
 }
 
-footer{
-    padding: 2em;
+.card--container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+
+}
+
+.card {
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.img--card {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    object-fit: cover;
+}
+
+.img--card-1 {
+    margin-top: 1.5rem;
+    margin-left: 0.8rem;
+    width: 90%;
+    height: auto;
+}
+
+.card--contenido {
+    padding: 15px;
     text-align: center;
 }
 
-.footer--container{
-
-    display: flex;
-    justify-content: center;
-    gap: 2em;
+.card--contenido h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
 }
 
-.footer--item{
-    
+.card--contenido p {
+    line-height: 2em;
+    color: #adb0b1;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.img--web {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.card--app {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card--app img:hover {
+    box-shadow: 5px 5px 20px rgba(8, 8, 8, 0.2);
+    transform: scale(1.05);
+}
+
+.card--app img {
+    width: 35%;
+    padding: 0.5rem;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.footer--container {
+
+    text-align: center;
+}
+
+.footer--container .footer--one {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 45px 0px;
+}
+
+.footer--container .footer--one .box img {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.footer--item a{
-    margin: 0.5em;
+#redes--sociales {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2em;
 }
 
-.footer--item p{
-    margin: 0.5em;
+#redes--sociales a:hover {
+    color: rgb(227, 43, 43);
+    font-size: 20px;
 }
-.footer--item li{
-    margin: 0.5em;
-    list-style: none;
+
+small {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
 }
 
 @media(max-width:600px) {
     .container--main {
         padding: 1em;
+        text-align: center;
     }
 
     #wrapper--hero {
@@ -158,4 +260,75 @@ footer{
         width: 200px;
         height: 200px;
     }
+
+    .img--web {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+    }
+
+    .card--container {
+        width: 100%;
+        max-width: 400px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img--card {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: -2.2rem;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    .img--card-1 {
+        margin-bottom: -2.2rem;
+        width: 60%;
+        height: auto;
+    }
+
+    .card--app {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        cursor: default;
+        transition: all 400ms ease;
+    }
+
+    .card--app img:hover {
+        box-shadow: 5px 5px 20px rgba(8, 8, 8, 0.2);
+        transform: scale(1.05);
+    }
+
+    .card--app img {
+        margin: 10px;
+        width: 100%;
+        padding: 0.5rem;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .footer--container .footer--one {
+        margin-top: -3rem;
+        width: 90%;
+        max-width: 800px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        padding: 35px 0px;
+    }
+
+    .footer--container .footer--one .box img {
+        margin-left: 8rem;
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
