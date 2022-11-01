@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Readex Pro', sans-serif;
+    line-height: 1.9em;
+    box-sizing: border-box;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: #131415;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+nav a {
+    color: #adb0b1;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#logo {
+    width: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#menu--container {
+    display: flex;
+}
+
+#menu--container a {
+    margin: 0 1em;
+}
+
+#github--logo {
+    width: 60px;
+}
+
+.container--main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#banner-pic {
+    box-sizing: content-box;
+    width: 170px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.youtube {
+    color: red;
+}
+
+#user-name {
+    font-size: 48px;
+    line-height: 0;
+}
+
+#bio,
+a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p,
+li {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+
+h1 {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer{
+    padding: 2em;
+    text-align: center;
+}
+
+.footer--container{
+
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer--item{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer--item a{
+    margin: 0.5em;
+}
+
+.footer--item p{
+    margin: 0.5em;
+}
+.footer--item li{
+    margin: 0.5em;
+    list-style: none;
+}
+
+@media(max-width:600px) {
+    .container--main {
+        padding: 1em;
+    }
+
+    #wrapper--hero {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    #github--logo {
+        display: none;
+    }
+
+    #banner-pic {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,24 @@
+#blog article{
+    margin: 25px;
+}
+
+
+#blog h4{
+    
+    font-size: 65px;
+}
+
+#blog p{
+
+    border: 0px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: inherit;
+    font-size: 25px;
+    font-style: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+
+}
